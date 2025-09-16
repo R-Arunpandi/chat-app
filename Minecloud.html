@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MineCloud</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body class="bg-gradient-to-t from-white to-gray-300 overflow-y-hidden h-screen">
+    <div class="grid grid-cols-5 grid-rows-[60px_1fr] min-h-screen gap-2">
+        <!--Navebar-->
+        <div class=" h-[60px] col-span-6 -ml-20 mr-5 gap-10 mt-1">
+            <div class="flex justify-around">
+                <div class="flex gap-3 items-center">
+                    <img src="img/log.jpg" alt="logo" class="fit-content w-[55px] rounded-[5px]">
+                    <h1 class="text-2xl font-bold">MineCloud</h1>
+                </div>
+                <div class="flex items-center gap-7">
+                    <h1 class="hover:border-2 px-4 py-2 hover:text-blue-800 hover:bg-white hover:cursor-pointer"><span><i
+                                class="fa-regular fa-file">&emsp;</i></span>File</h1>
+                    <h1 class="hover:border-2 px-4 py-2 hover:text-blue-800 hover:bg-white hover:cursor-pointer"><span><i
+                                class="fa-solid fa-wave-square">&emsp;</i></span>Activity</h1>
+                    <h1 class="hover:border-2 px-4 py-2 hover:text-blue-800 hover:bg-white hover:cursor-pointer"><span><i
+                                class="fa-regular fa-calendar-days">&emsp;</i></span>Calendar</h1>
+                    <h1 class="hover:border-2 px-4 py-2 hover:text-blue-800 hover:bg-white hover:cursor-pointer"><span><i
+                                class="fa-regular fa-address-book">&emsp;</i></span>Contact</h1>
+                </div>
+                <div class="flex items-center gap-7">
+                    <div class=" flex w-[40vh] h-9 rounded-[10px] border-2 border-black px-2 items-center gap-5">
+                        <i class="fa-brands fa-searchengin  text-2xl"></i>
+                        <input class="bg-gray-300 focus:outline-none text-[20px]" placeholder="Search anything">
+                    </div>
+                    <i class="fa-regular fa-bell text-2xl cursor-pointer"></i>
+                    <img src="img/profile.jpg" alt="profile" class="w-[40px] h-[40px] rounded-full cursor-pointer">
+                </div>
+            </div>
+        </div>
+
+        <!--right corner-->
+        <div class="border-2 border-gray-200 shadow-sm bg-white col-span-1 ml-5 rounded-[15px] h-[91vh]">
+            <div class="ml-10 h-[55vh]">
+                <details class=" mt-10 bg-blue-200 text-[20px] text-black rounded-2xl p-2 w-[250px]">
+                    <summary class="cursor-pointer px-4 flex items-center gap-2">
+                        <i class="fa-solid fa-file"></i>
+                        All Files <span>&emsp; &emsp; &emsp; <i class="fa-solid fa-angle-down"></i></span>
+                    </summary>
+
+                    <div class="cursor-pointer flex flex-col gap-3 px-6 py-2">
+                        <h1
+                            class="flex items-center gap-2 hover:border-2 hover:p-2 hover:bg-blue-500 hover:text-2xl hover:text-white hover:rounded-2xl">
+                            <i class="fa-solid fa-clock-rotate-left"></i> Recent
+                        </h1>
+                        <h1
+                            class="flex items-center gap-2 hover:border-2 hover:p-2 hover:bg-blue-500 hover:text-2xl hover:text-white hover:rounded-2xl">
+                            <i class="fa-solid fa-heart"></i> Favorite
+                        </h1>
+                        <h1
+                            class="flex items-center gap-2 hover:border-2 hover:p-2 hover:bg-blue-500 hover:text-2xl hover:text-white hover:rounded-2xl">
+                            <i class="fa-solid fa-share-nodes"></i></i> Shared
+                        </h1>
+                        <h1
+                            class="flex items-center gap-2 hover:border-2 hover:p-2 hover:bg-blue-500 hover:text-2xl hover:text-white hover:rounded-2xl">
+                            <i class="fa-solid fa-tag"></i> Tags
+                        </h1>
+                    </div>
+                </details>
+            </div>
+            <div class="ml-10 h-[12vh] text-[20px]">
+                <h1><i class="fa-solid fa-gear "></i>&emsp;<span>Settings</span></h1>&emsp;
+                <h1><i class="fa-solid fa-trash "></i>&emsp;<span>Deleted Files</span></h1>
+            </div>
+            <div class="ml-10 h-[15vh] w-[28vh] border-2 border-black rounded-2xl p-5 hover:cursor-pointer">
+                <div class="flex items-center gap-10">
+                    <h1 class="text-[20px]"><i class="fa-solid fa-database text-2xl">&emsp;</i><span>Storage</span></h1>
+                    <h1><i class=" text-2xl fa-solid fa-arrow-right"></i></h1>
+                </div>
+                <div class="flex py-2">
+                    <div class="border-2 border-blue-800 rounded-l-2xl w-[5vh]"></div>
+                    <div class="border-2 border-gray-500 rounded-r-2xl w-[20vh]"></div>
+                </div>
+                <div class="py-2">
+                    <p>45Gb used from 256GB</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Center-->
+        <div class="col-span-3 flex flex-col ml-8 gap-5">
+            <!--center 1-->
+            <div class="border-2 border-gray-200 shadow-sm bg-white h-[30vh] rounded-[15px]">
+
+                <div class="m-5 text-2xl font-bold">
+                    <div class="flex justify-between">
+                        <h1>Quick Access </h1>
+                        <i class="fa-solid fa-ellipsis-vertical hover:cursor-pointer"></i>
+                    </div>
+                </div>
+
+                <div class=" mt-5 grid grid-cols-4 h-[20vh] w-[100vh] gap-8 mx-auto text-[18px]  font-bold">
+                    <div class="flex flex-col border-2 border-gray-200 rounded-2xl p-5">
+                        <i class="fa-solid fa-folder text-blue-500 text-6xl"></i>
+                        <h3 class="mt-5">Studio Work</h3>
+                        <div class="flex items-center">
+                            <p class="font-normal text-[15px]">2.3GB</p>
+                            <i class="fa-solid fa-circle text-[5px] p-2"></i>
+                            <p class="font-normal text-[15px]">23items</p>
+                        </div>
+
+                    </div>
+                    <div class="flex flex-col border-2 border-gray-200 rounded-2xl p-5">
+                        <i class="fa-solid fa-folder text-blue-500 text-6xl"></i>
+                        <h3 class="mt-5">Source</h3>
+                        <div class="flex items-center">
+                            <p class="font-normal text-[15px]">1.2MB</p>
+                            <i class="fa-solid fa-circle text-[5px] p-2"></i>
+                            <p class="font-normal text-[15px]">1items</p>
+                        </div>
+
+                    </div>
+                    <div class="flex flex-col border-2 border-gray-200 rounded-2xl p-5">
+                        <i class="fa-solid fa-folder text-blue-500 text-6xl"></i>
+                        <h3 class="mt-5">Brand Assets</h3>
+                        <div class="flex items-center">
+                            <p class="font-normal text-[15px]">241MB</p>
+                            <i class="fa-solid fa-circle text-[5px] p-2"></i>
+                            <p class="font-normal text-[15px]">8items</p>
+                        </div>
+
+                    </div>
+                    <div class="flex flex-col border-2 border-gray-200 rounded-2xl p-5">
+                        <i class="fa-solid fa-file-invoice text-orange-500 text-6xl"></i>
+                        <h3 class="mt-5">Great studio pitch...</h3>
+                        <div class="flex items-center">
+                            <p class="font-normal text-[15px]">12.3MB</p>
+                            <i class="fa-solid fa-circle text-[5px] p-2"></i>
+                            <p class="font-normal text-[15px]">pptx</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--center 2-->
+            <div class="border-2 border-gray-200 shadow-sm bg-white rounded-[15px] h-[59vh]">
+
+                <div class="flex mt-5 ml-5 text-2xl items-center justify-between">
+                    <div class="flex gap-5">
+                        Home<span class="font-normal"> > </span><span>Concept Font</span><span class="font-normal"> >
+                        </span><span class="font-bold hover:cursor-pointer">Maszeh</span>
+                    </div>
+
+                    <div class="mr-5">
+                        <div class="flex flex-row items-center gap-5">
+                            <i class="fa-solid fa-table-cells-large text-4xl text-gray-600 gap-2 hover:cursor-pointer"></i>
+                            <div class="bg-blue-800 p-2 text-white rounded-2xl text-[20px] hover:cursor-pointer"> <span
+                                    class="mr-2 font-bold">+ </span>Add New</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--table-->
+                <div class="p-5">
+                    <table class="-mt-3 ml-2 table-auto font-bold w-full">
+                        <thead class="bg-gray-100">
+                            <tr class="text-lg font-bold text-gray-600">
+                                <th class="text-start px-6 py-3">Name<span class="text-xl">⌄</span></th>
+                                <th class="text-start py-3 px-10">Sharing</th>
+                                <th class="text-start py-3 px-10">Size<span class="text-xl">⌄</span></th>
+                                <th class="text-start py-3 px-10">Modified<span class="text-xl">⌄</span></th>
+                                <th class="text-start py-3 px-14"></th>
+                            </tr>
+                        </thead>
+                        <tr class="">
+                            <td class="p-5"><i class="fa-solid fa-folder text-blue-500 text-2xl"></i><span
+                                    class="ml-2">Docs</span></td>
+                            <td class="px-10 font-normal">Public</td>
+                            <td class="px-10 font-normal">4.5MB</td>
+                            <td class="px-10 font-normal">April 10, 2022</td>
+                            <td class="px-10"> …</td>
+                        </tr>
+                        <tr class="">
+                            <td class="p-5"><i class="fa-solid fa-folder text-blue-500 text-2xl"></i><span
+                                    class="ml-2">Fonts</span></td>
+                            <td class="px-10 font-normal">Public</td>
+                            <td class="px-10 font-normal">2.5MB</td>
+                            <td class="px-10 font-normal">April 2, 2022</td>
+                            <td class="px-10"> …</td>
+                        </tr>
+                        <tr class="bg-blue-100">
+                            <td class="p-5"><i class="fa-solid fa-folder text-blue-500 text-2xl"></i><span
+                                    class="ml-2">Sources</span></td>
+                            <td class="px-10 font-normal">
+                                <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                    src="img/profile.jpg" />
+                                <img class="inline-block h-6 w-6 -ml-2 rounded-full ring-2 ring-white"
+                                    src="img/profile.jpg" />
+                                <img class="inline-block h-6 w-6 -ml-2 rounded-full ring-2 ring-white"
+                                    src="img/profile.jpg" /><span class="font-normal"> +4</span>
+                            </td>
+                            <td class="px-10 font-normal">1.2MB</td>
+                            <td class="px-10 font-normal">Yesterday</td>
+                            <td class="px-10"> …</td>
+                        </tr>
+                        <tr class="">
+                            <td class="p-5"><i class="fa-solid fa-file-pdf text-blue-500 text-2xl"></i><span
+                                    class="ml-2">Example</span></td>
+                            <td class="px-10 font-normal">
+                                <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+                                    src="img/profile.jpg" />
+                                <img class="inline-block h-6 w-6 -ml-2 rounded-full ring-2 ring-white"
+                                    src="img/profile.jpg" />
+                                <img class="inline-block h-6 w-6 -ml-2 rounded-full ring-2 ring-white"
+                                    src="img/profile.jpg" />
+                            </td>
+                            <td class="px-10 font-normal">12.2MB</td>
+                            <td class="px-10 font-normal">oct 12, 2021</td>
+                            <td class="px-10"> …</td>
+                        </tr>
+                        <tr class="">
+                            <td class="p-5"><i class="fa-brands fa-readme text-blue-500 text-2xl"></i><span
+                                    class="ml-2">Readme.md</span></td>
+                            <td class="px-10 font-normal">Public</td>
+                            <td class="px-10 font-normal">12.2MB</td>
+                            <td class="px-10 font-normal">oct 12, 2021</td>
+                            <td class="px-10"> …</td>
+                        </tr>
+                        <tr class="">
+                            <td class="p-5"><i class="fa-solid fa-file-code  text-blue-500 text-2xl"></i><span
+                                    class="ml-2">index.html</span></td>
+                            <td class="px-10 font-normal">Public</td>
+                            <td class="px-10 font-normal">12.2MB</td>
+                            <td class="px-10 font-normal">oct 12, 2021</td>
+                            <td class="px-10"> …</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+        <!--left Corner-->
+        <div
+            class="border-2 border-gray-200 shadow-sm bg-white text-white col-span-1 ml-5 mr-5 rounded-[15px] h-[91vh]">
+            <!--source-->
+            <div class="mt-5 ml-5 mr-5">
+                <div class="flex justify-between">
+                    <i class="fa-solid fa-folder text-blue-500 text-4xl"></i>
+                    <i class="fa-solid fa-xmark text-2xl text-black hover:cursor-pointer"></i>
+                </div>
+                <div class="mt-3 font-bold text-2xl text-black">
+                    <h1>Source</h1>
+                    <div class="flex items-center gap-2 font-normal">
+                        <p class="text-[20px]">1.2MB</p>
+                        <i class="fa-solid fa-circle text-[5px]"></i>
+                        <p class="text-[20px]">Yesterday</p>
+                        <i class="fa-solid fa-circle text-[5px]"></i>
+                        <p class="text-[20px]">1 item</p>
+                    </div>
+                </div>
+
+                <hr class="my-3 border-gray-400" />
+                <!--tags-->
+                <div class=" mt-3 space-y-4">
+                    <div class="flex justify-between">
+                        <h3 class="text-black text-[23px] text-gray-500">Tags</h3>
+                        <h3 class="text-blue-500 text-[20px] font-bold hover:cursor-pointer">Edit</h3>
+                    </div>
+                    <div class="grid grid-cols-4 mt-3">
+                        <div class="bg-blue-200 rounded-[5px] text-blue-800 px-2 w-fit">Work</div>
+                        <div class="bg-blue-200 rounded-[5px] text-blue-800 px-2 w-fit">Source</div>
+                        <div class="bg-blue-200 rounded-[5px] text-blue-800 px-2 w-fit">Font</div>
+                    </div>
+                </div>
+                <!--sharing-->
+                <div class="mt-3 space-y-4">
+                    <div class="flex justify-between">
+                        <h3 class="text-black text-[23px] text-gray-500">Sharing</h3>
+                        <h3 class="text-blue-500 text-[20px] font-bold hover:cursor-pointer">Manage</h3>
+                    </div>
+                    <div class="items-center ">
+                        <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white" src="img/profile.jpg" />
+                        <img class="inline-block h-8 w-8 -ml-2 rounded-full ring-2 ring-white" src="img/profile.jpg" />
+                        <img class="inline-block h-8 w-8 -ml-2 rounded-full ring-2 ring-white" src="img/profile.jpg" />
+                        <img class="inline-block h-8 w-8  -ml-2 rounded-full ring-2 ring-white" src="img/profile.jpg" />
+                        <div
+                            class="inline-flex items-center justify-center h-8 w-8 -ml-2 rounded-full ring-2 ring-white bg-gray-100 text-xs font-semibold text-black">
+                            +3</div>
+                    </div>
+                </div>
+                <!--activity-->
+                <div class="mt-3 flex justify-between">
+                    <h3 class="relative inline-block group text-black font-bold">Activity
+                        <span
+                            class="absolute left-0 -bottom-2 w-0 h-[3px] bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+                    </h3>
+                    <h3 class="relative inline-block group text-black font-bold">Comments
+                        <span
+                            class="absolute left-0 -bottom-2 w-0 h-[3px] bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+                    </h3>
+                    <h3 class="relative inline-block group text-black font-bold">versions
+                        <span
+                            class="absolute left-0 -bottom-2 w-0 h-[3px] bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+                    </h3>
+                </div>
+
+                <hr class="my-[6px] border-gray-400 w-full" />
+                <!--miko-->
+                <div class="mt-2 space-y-3 border-l-2 border-gray-200">
+                    <div class="-ml-[11px] flex items-center justify-around w-[11vh]">
+                        <i class="fa-solid fa-circle text-[7px] text-blue-800"></i>
+                        <h3 class="text-black">Yesterday</h3>
+                    </div>
+                    <div class="-ml-[11px] flex justify-around ">
+                        <div class="ml-8">
+                            <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white" src="img/profile.jpg" />
+                            <img class="inline-block h-6 w-6 -ml-2 rounded-full ring-2 ring-white"
+                                src="img/profile.jpg" />
+                        </div>
+                        <div>
+                            <p class="text-black">You shared edit access to</p>
+                            <span class="text-blue-800 font-bold">Miko</span>
+                        </div>
+                    </div>
+
+                    <!--Ashley-->
+                    <div class="-ml-[11px] flex items-center justify-around w-[11vh]">
+                        <i class="fa-solid fa-circle text-[7px] text-blue-800"></i>
+                        <h3 class="text-black">Yesterday</h3>
+                    </div>
+                    <div class="-ml-[11px] flex justify-around">
+                        <div class="ml-8">
+                            <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white" src="img/profile.jpg" />
+                            <img class="inline-block h-6 w-6 -ml-2 rounded-full ring-2 ring-white"
+                                src="img/profile.jpg" />
+                        </div>
+                        <div>
+                            <p class="text-black">You shared edit access to</p>
+                            <span class="text-blue-800 font-bold">Ashley</span>
+                        </div>
+                    </div>
+                    <!--Maszeh-->
+                    <div class="-ml-[17px] flex items-center justify-around w-[15vh]">
+                        <i class="fa-solid fa-circle text-[7px] text-blue-800"></i>
+                        <h3 class="text-black">April 1,2022</h3>
+                    </div>
+                    <div class="-ml-[17px] flex gap-5 items-center">
+                        <div class="ml-8">
+                            <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white" src="img/profile.jpg" />
+                        </div>
+                        <div class="">
+                            <p class="text-black">You changed <span class="text-blue-800 font-bold"> Maszeh.glyph</span>
+                            </p>
+                            <p class="text-black font-bold">
+                            <pre
+                                class="text-black font-bold"><i class="fa-regular fa-file text-gray-600 text-2xl"></i>  Maszeh.glyph</pre>
+                        </div>
+                    </div>
+                    <!--you tag-->
+                    <div class="-ml-[14px] flex items-center justify-around w-[15vh]">
+                        <i class="fa-solid fa-circle text-[7px] text-blue-800"></i>
+                        <h3 class="text-black">April 21,2022</h3>
+                    </div>
+                    <div class="-ml-[16px] flex gap-5 items-center space-x-3">
+                        <div class="ml-8">
+                            <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white" src="img/profile.jpg" />
+                        </div>
+                        <div>
+                            <p class="text-black">You added tag</p>
+                            <div class="mt-2 flex gap-5 justify-around items-center">
+                                <div class="bg-blue-200 rounded-[5px] text-blue-800 px-2 w-fit">Work</div>
+                                <div class="bg-blue-200 rounded-[5px] text-blue-800 px-2 w-fit">+2</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--nolan-->
+                    <div class="-ml-[16px] flex items-center justify-around w-[15vh]">
+                        <i class="fa-solid fa-circle text-[7px] text-blue-800"></i>
+                        <h3 class="text-black">Feb 16,2022</h3>
+                    </div>
+                    <div class="-ml-[16px] flex justify-around items-center">
+                        <div class="ml-8">
+                            <img class="inline-block h-6 w-6 rounded-full ring-2 ring-white" src="img/profile.jpg" />
+                            <img class="inline-block h-6 w-6 -ml-2 rounded-full ring-2 ring-white"
+                                src="img/profile.jpg" />
+                        </div>
+                        <div>
+                            <p class="text-black">You change edit to view</p>
+                            <span class="text-black">access to nolan </span>
+                            <span class="text-blue-800 font-bold">Ashley</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
